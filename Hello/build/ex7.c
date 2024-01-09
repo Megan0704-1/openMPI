@@ -9,5 +9,10 @@ int main(int argc, char* argv[]){
     char last_name[] = "Kuo";
 
     printf("You are %d miles away.\n", distance);
-    printf("My name is %s %s", first_name, last_name);
+    printf("My name is %s %s\n", first_name, last_name);
+    printf("printing e: %e\n", super_power);
+
+    char nul_byte = '\0';
+    int percentage = 100 * nul_byte;
+    printf("Strange output: %d%%.\n", percentage);
 }
