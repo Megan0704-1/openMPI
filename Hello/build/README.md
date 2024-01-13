@@ -1,6 +1,6 @@
 - ex7: reveiew on variables and typs
 - ex10: swtich statements
--
+- ex17: database execution
 
 
 ## Deep dive into Switch Statements
