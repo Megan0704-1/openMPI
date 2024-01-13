@@ -28,11 +28,28 @@ char name[] = "Megan";
 
 
 ## Functions lookup
+> file handling in C is a process where we create, open, read, write and close operations on a file. C language provides different functions such as fopen, fwrite, fread, fseek, fprintf, etc. to perform input, output, and many different C file operations in the program.
+> files can be classified into two types - text files, binary files.
+> A text file contains data in the form of ASCII characters and is generally used to store a stream of characters. Each line in a text file ends with a new line character `\n`.
+> A binary file contains data in binary form. The file contain data that is stored in a similar way to how it is stored in the main memory.
+### C File operations
+- Create a new file : `fopen` with attrs as 'a', 'a+', 'w', 'w+', ...
+- Open an existing file : `fopen`
+- Read from file : `fscanf`, `fgets`
+- Write to file : `fprintf`, `fputs`
+- Move to a specific location : `fseek`, `rewind`
+- Close a file : `fclose`
+
 1. FILE type
+> A file pointer is a reference to a particular position in the opened file. It is used in file handling to perform all file operations such as read, write, close, etc. We use **FILE** macro to declare the file pointer variable. The **FILE** macro is defined in `<stdio.h>` header file.
 2. errno
 3. perror
 4. fread
 5. fopen
+> For opening a file in C, the function is used with the filename or filepath along with the required access modes.
+> If the file is opened successfully, the function returns a file pointer. else returns NULL. -> If the file opened successfully, `fopen` loads it into memory, and sets up a pointer that points to the first character in it.
+`FILE* fopen(const char *file_name, const char *access_mode);`
+**Opening modes:** 
 6. fclose
 7. rwrite
 8. strncpy
