@@ -18,3 +18,21 @@
 4. It then does the math to figure out where `Y` + `letter` is locates in the statement. If the location is too far, the program adjusts location to `Y` + `default`.
 5. Once the program determines the location, the program jumps to that spot in the code, and continues running. That is the reason we have to add break on some of the case blocks and some not.
 
+## How to read an array
+```
+int areas[] = {1,2,3};
+char name[] = "Megan";
+```
+- I want an array named `areas` of type `int` that is initialized to `1,2,3`.
+- I want another array named `name` of type `char` that is initialized to `M, e, g, a, n`.
+
+
+## Functions lookup
+1. FILE type
+2. errno
+3. perror
+4. fread
+5. fopen
+6. fclose
+7. rwrite
+8. strncpy
